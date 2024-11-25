@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+th, td { padding: 0.5rem; font-size: 1rem; }
+
+th { font-weight: normal; background: rgb(0, 113, 173); color: white; line-height: normal; }
+
+th:first-child { border-top-left-radius: 4px; }
+
+th:last-child { border-top-right-radius: 4px; }
+
+tr { border-bottom: 1px solid rgb(209, 204, 199); }
+
+.ctn-tabela { height: 100%; width: 100%; display: flex; flex-flow: column; }
+
+.botoes-docados .ctn-tabela { height: calc(100vh - var(--altura-menu) - 2rem - 4rem); width: 100%; display: flex; flex-flow: column; }
+
+.ctn-tabela > * { flex: 0 0 auto; }
+
+.ctn-tabela > .dados { flex: 1 1 auto; overflow: auto; }
+
+.ctn-tabela > .acoes { display: flex; align-items: center; justify-content: center; }
+
+table.th-fixo th { position: sticky; top: 0px; }
+
+@media (min-width: 1024px) {
+  .ctn-tabela .acoes input[type="search"] { flex: 0 0 300px; }
+}
+
+.ctn-tabela h1 { margin: 0px; }

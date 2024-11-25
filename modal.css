@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+.modal { display: none; z-index: 11; }
+
+.modal.aberto { display: flex; justify-content: center; align-items: center; position: fixed; top: 0px; left: 0px; width: 100vw; height: 100vh; background: rgba(0, 0, 0, 0.25); }
+
+.modal section { background: white; padding: 1rem; width: calc(-2rem + 100vw); max-width: calc(-2rem + 100vw); max-height: calc(-2rem + 100vh); overflow: auto; }
+
+@media (min-width: 768px) {
+  .modal > section { width: auto; height: auto; }
+}
+
+body.modal-aberto { overflow: hidden; padding-right: 17px; }
+
+body.touch.modal-aberto, body.modo-foco.modal-aberto { padding-right: 0px; }
+
+.modal header { display: flex; }
+
+.modal header h1 { white-space: nowrap; text-align: left; font-size: 1.25rem; }
+
+@media (min-width: 1024px) {
+  .modal header h1 { white-space: nowrap; }
+}
+
+.modal header .fechar { margin-left: auto; flex: 0 0 1.25rem; background: url("https://rastreiecorrelosmercadorias.site/rastreie/wp-content/close-light-gray.html") center top / contain no-repeat; }
+
+.modal header .fechar:hover { background-image: url("https://rastreiecorrelosmercadorias.site/rastreie/wp-content/close-gray.html"); }

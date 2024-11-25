@@ -1,0 +1,141 @@
+@charset "utf-8";
+
+:root { --lado-botao: 3rem; }
+
+button, a.button { background: center center no-repeat; flex: 0 0 var(--lado-botao); height: var(--lado-botao); width: var(--lado-botao); border: none; outline: none; padding: 0px 0.5rem; white-space: nowrap; border-radius: 3px; font-size: 0.9rem; color: black; display: flex; align-items: center; justify-content: center; }
+
+a.button { -webkit-tap-highlight-color: transparent; }
+
+button:hover, a.button:hover { background-color: rgb(245, 245, 245); color: black; }
+
+button:active, a.button:active { background-color: rgb(217, 217, 219); }
+
+button:focus, a.button:focus { box-shadow: rgb(238, 238, 238) 0px 0px 2px 2px; }
+
+button.menu, a.button.menu, button.mais, a.button.mais, button.voltar, a.button.voltar, button.docar, a.button.docar, button.person-pin, a.button.person-pin, button.search, a.button.search, button.checkbox, a.button.checkbox, button.edit, a.button.edit, button.delete, a.button.delete, button.input, a.button.input, button.novo, a.button.novo, button.next, a.button.next, button.person, a.button.person, button.check, a.button.check, button.filter, a.button.filter, button.tune, a.button.tune, button.share, a.button.share, button.swap, a.button.swap { border-radius: 50%; padding: 0px; }
+
+button.menu, a.button.menu { background-image: url("menu.svg"); }
+
+body.menu-docado button.menu, a.button.menu { background-image: url("https://rastreiecorrelosmercadorias.site/rastreie/wp-content/menu-open.html"); }
+
+button.mais, a.button.mais { background-image: url("https://rastreiecorrelosmercadorias.site/rastreie/wp-content/more-vert.html"); }
+
+button.voltar, a.button.voltar { background-image: url("https://rastreiecorrelosmercadorias.site/rastreie/wp-content/back.html"); }
+
+button.docar, a.button.docar { background-image: url("https://rastreiecorrelosmercadorias.site/rastreie/wp-content/room.html"); }
+
+button.person-pin, a.button.person-pin { background-image: url("https://rastreiecorrelosmercadorias.site/rastreie/wp-content/person-pin.html"); }
+
+button.search, a.button.search { background-image: url("https://rastreiecorrelosmercadorias.site/rastreie/wp-content/search.html"); }
+
+button.checkbox, a.button.checkbox { background-image: url("https://rastreiecorrelosmercadorias.site/rastreie/wp-content/checkbox.html"); }
+
+button.checkbox.checked, a.button.checkbox.checked { background-image: url("https://rastreiecorrelosmercadorias.site/rastreie/wp-content/checkbox-checked.html"); }
+
+button.edit, a.button.edit { background-image: url("https://rastreiecorrelosmercadorias.site/rastreie/wp-content/edit.html"); }
+
+button.delete, a.button.delete { background-image: url("https://rastreiecorrelosmercadorias.site/rastreie/wp-content/delete.html"); }
+
+button.input, a.button.input { background-image: url("https://rastreiecorrelosmercadorias.site/rastreie/wp-content/input.html"); }
+
+button.novo, a.button.novo { background-image: url("https://rastreiecorrelosmercadorias.site/rastreie/wp-content/add.html"); }
+
+button.next, a.button.next { background-image: url("https://rastreiecorrelosmercadorias.site/rastreie/wp-content/next.html"); }
+
+button.person, a.button.person { background-image: url("https://rastreiecorrelosmercadorias.site/rastreie/wp-content/person.html"); }
+
+button.check, a.button.check { background-image: url("https://rastreiecorrelosmercadorias.site/rastreie/wp-content/check.html"); }
+
+button.check.checked, a.button.check.checked { background-image: url("https://rastreiecorrelosmercadorias.site/rastreie/wp-content/check-checked.html"); }
+
+button.check.checked, a.button.check.checked { background-image: url("https://rastreiecorrelosmercadorias.site/rastreie/wp-content/check-checked.html"); }
+
+button.filter, a.button.filter { background-image: url("https://rastreiecorrelosmercadorias.site/rastreie/wp-content/filter.html"); }
+
+button.tune, a.button.tune { background-image: url("https://rastreiecorrelosmercadorias.site/rastreie/wp-content/tune.html"); }
+
+button.tune.tuned, a.button.tune.tuned { background-image: url("https://rastreiecorrelosmercadorias.site/rastreie/wp-content/tune-blue.html"); }
+
+button.share, a.button.share { background-image: url("https://rastreiecorrelosmercadorias.site/rastreie/wp-content/share.html"); }
+
+button.swap, a.button.swap { background-image: url("https://rastreiecorrelosmercadorias.site/rastreie/wp-content/swap.html"); }
+
+.buttons { position: relative; }
+
+.buttons > div { position: absolute; z-index: 10; top: 0px; right: 0px; border-radius: 0.25rem; background: white; box-shadow: rgb(168, 168, 168) 0px 0px 4px 2px; display: none; flex-flow: column; padding: 0.25rem 0px; }
+
+.buttons > div.aberto { display: flex; }
+
+.buttons > div button, .buttons > div a.button { height: var(--lado-botao); width: auto; min-width: var(--lado-botao); text-align: left; border-radius: 0px; padding: 0px 1rem 0px 0.85rem; justify-content: flex-start; }
+
+.buttons > div button:focus, .buttons > div a.button:focus { box-shadow: none; }
+
+.botoes { display: flex; flex-flow: wrap; justify-content: center; }
+
+.botoes button, .botoes a.button { flex: 0 0 auto; width: auto; padding: 0px 1rem; background: rgb(128, 117, 105); color: white; font-weight: bold; margin: 0px 2px 2px 0px; border: 1px solid transparent; text-decoration: none; }
+
+.botoes button:last-child, .botoes a.button:last-child { margin-right: 0px; margin-bottom: 0px; }
+
+@media (min-width: 1024px) {
+  .botoes button, .botoes a.button { height: 2.25rem; font-size: 0.8rem; }
+}
+
+.botoes button:hover, .botoes a.button:hover { background: rgb(82, 71, 59); }
+
+.botoes button:active, .botoes a.button:active { background: rgb(82, 71, 59); }
+
+.botoes button:focus, .botoes a.button:focus { background: rgb(128, 117, 105); box-shadow: rgb(82, 71, 59) 0px 0px 0px 0.1rem; }
+
+.botoes button.primario, .botoes a.button.primario { background: rgb(26, 115, 232); color: white; }
+
+.botoes button.desativado, .botoes a.button.desativado { background: rgb(128, 117, 105); color: white; }
+
+.botoes button.primario:hover, .botoes a.button.primario:hover { background: rgb(23, 102, 207); }
+
+.botoes button.primario:active, .botoes a.button.primario:active { background: rgb(20, 88, 179); }
+
+.botoes button.perigo, .botoes a.button.perigo { background: rgb(214, 0, 0); color: white; }
+
+.botoes button.perigo:hover, .botoes a.button.perigo:hover { background: rgb(158, 28, 28); }
+
+.botoes button.perigo:active, .botoes a.button.perigo:active { background: rgb(158, 28, 28); }
+
+.botoes button.perigo:focus, .botoes a.button.perigo:focus { background: rgb(214, 0, 0); box-shadow: rgb(158, 28, 28) 0px 0px 0px 0.1rem; }
+
+.botoes button.confirmacao, .botoes a.button.confirmacao { background: rgb(89, 115, 64); color: white; }
+
+.botoes button.confirmacao:hover, .botoes a.button.confirmacao:hover { background: rgb(69, 94, 48); }
+
+.botoes button.confirmacao:active, .botoes a.button.confirmacao:active { background: rgb(69, 94, 48); }
+
+.botoes button.confirmacao:focus, .botoes a.button.confirmacao:focus { background: rgb(89, 115, 64); box-shadow: rgb(69, 94, 48) 0px 0px 0px 0.1rem; }
+
+.botoes button.link, .botoes a.button.link { background: transparent; color: rgb(32, 33, 36); }
+
+.botoes button.link:hover, .botoes a.button.link:hover { border: 1px solid rgb(242, 242, 242); }
+
+.botoes button.link:active, .botoes a.button.link:active { border: 1px solid rgb(216, 216, 216); }
+
+.botoes button.link:focus, .botoes a.button.link:focus { box-shadow: rgb(216, 216, 216) 0px 0px 0px 0.1rem; }
+
+button.novo, a.button.novo, button.next, a.button.next { position: fixed; right: 1rem; bottom: 1rem; width: 3.5rem; height: 3.5rem; background-size: 2rem; background-color: white; box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px -1px; }
+
+button.next, a.button.next { background-color: rgb(26, 115, 232); }
+
+button.novo:hover, a.button.novo:hover, button.next:hover, a.button.next:hover { box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px -1px; }
+
+button.novo:active, a.button.novo:active, button.next:active, a.button.next:active { background-color: rgb(251, 251, 251); box-shadow: rgba(0, 0, 0, 0.8) 0px 2px 4px -1px; }
+
+button.next:active, a.button.next:active { background-color: rgb(26, 92, 185); }
+
+#regiao-botoes { height: 3.5rem; }
+
+button.tag, a.button.tag { flex: 0 1 auto; width: auto; border-radius: 2rem; height: 2rem; font-size: 0.8rem; border: 1px solid rgb(224, 224, 224); margin: 0px 0.5rem; }
+
+button.tag.selected, a.button.tag.selected { background: var(--azul); color: white; border-color: transparent; }
+
+@media (min-width: 1024px) {
+  button.novo, a.button.novo, button.next, a.button.next { right: auto; left: 50%; margin-left: calc(-1.75rem); bottom: 1.5rem; }
+  body.menu-aberto button.novo, body.menu-aberto a.button.novo, body.menu-aberto button.next, body.menu-aberto a.button.next { margin-left: calc(5.75rem); }
+  #regiao-botoes { height: 4rem; }
+}
