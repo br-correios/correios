@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
-<!-- Mirrored from cnhliberada.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 26 Nov 2024 10:20:43 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,7 +20,30 @@
 
   <title>Carteira Digital de Trânsito</title>
 
-<script type="text/javascript" class="flasher-js">(function() {    var rootScript = '../cdn.jsdelivr.net/npm/%40flasher/flasher%401.3.2/dist/flasher.min.js';    var FLASHER_FLASH_BAG_PLACE_HOLDER = {};    var options = mergeOptions([], FLASHER_FLASH_BAG_PLACE_HOLDER);    function mergeOptions(first, second) {        return {            context: merge(first.context || {}, second.context || {}),            envelopes: merge(first.envelopes || [], second.envelopes || []),            options: merge(first.options || {}, second.options || {}),            scripts: merge(first.scripts || [], second.scripts || []),            styles: merge(first.styles || [], second.styles || []),        };    }    function merge(first, second) {        if (Array.isArray(first) && Array.isArray(second)) {            return first.concat(second).filter(function(item, index, array) {                return array.indexOf(item) === index;            });        }        return Object.assign({}, first, second);    }    function renderOptions(options) {        if(!window.hasOwnProperty('flasher')) {            console.error('Flasher is not loaded');            return;        }        requestAnimationFrame(function () {            window.flasher.render(options);        });    }    function render(options) {        if ('loading' !== document.readyState) {            renderOptions(options);            return;        }        document.addEventListener('DOMContentLoaded', function() {            renderOptions(options);        });    }    if (1 === document.querySelectorAll('script.flasher-js').length) {        document.addEventListener('flasher:render', function (event) {            render(event.detail);        });            }    if (window.hasOwnProperty('flasher') || !rootScript || document.querySelector('script[src="' + rootScript + '"]')) {        render(options);    } else {        var tag = document.createElement('script');        tag.setAttribute('src', rootScript);        tag.setAttribute('type', 'text/javascript');        tag.onload = function () {            render(options);        };        document.head.appendChild(tag);    }})();</script>
+  <style>
+    /* Ajustes para dispositivos móveis */
+    @media (max-width: 768px) {
+      .index-card {
+        margin: 0 auto;
+        width: 90%;
+        padding: 20px;
+      }
+      .btn-cta {
+        font-size: 16px;
+        padding: 10px 20px;
+      }
+    }
+
+    /* Ajuste geral para botão */
+    .index-card {
+      margin-bottom: 50px; /* Ajusta a posição do botão */
+    }
+
+    .btn-cta {
+      margin-top: 20px; /* Garante que o botão não esteja muito próximo do conteúdo */
+    }
+  </style>
+
 </head>
 
 <body>
@@ -44,48 +64,35 @@
   </header>
 
   <main class="">
-      <section class="w-100">
-    <div class="bg-image-blue">
-      <div class="index-card box-shadow p-4 text-dark bg-white">
-        <h5 class="text-blue font-weight-700 font-size-18 mb-4">
-          Bem-vido à <br />Carteira Digital de Trânsito (CDT)
-        </h5>
+    <section class="w-100">
+      <div class="bg-image-blue">
+        <div class="index-card box-shadow p-4 text-dark bg-white">
+          <h5 class="text-blue font-weight-700 font-size-18 mb-4">
+            Bem-vindo à <br />Carteira Digital de Trânsito (CDT)
+          </h5>
 
-        <div class="text-dark font-size-13 mt-2 mb-3">
-          Ao entrar, você concorda com nosso <a href="index.html" class="text-blue font-weight-500">Termo de
-            Responsabilidade</a> e <a href="index.html" class="text-blue font-weight-500">Política de
-            Privacidade</a>.
-        </div>
+          <div class="text-dark font-size-13 mt-2 mb-3">
+            Ao entrar, você concorda com nosso <a href="index.html" class="text-blue font-weight-500">Termo de
+              Responsabilidade</a> e <a href="index.html" class="text-blue font-weight-500">Política de
+              Privacidade</a>.
+          </div>
 
-        <div class="w-100 px-0 d-flex justify-content-center mb-2">
-          <a href="entrar.html" class="btn-cta">
-            <i class="fas fa-user mr-1"></i>
-            Entrar com gov.br
-          </a>
+          <div class="w-100 px-0 d-flex justify-content-center mb-2">
+            <a href="entrar.html" class="btn-cta">
+              <i class="fas fa-user mr-1"></i>
+              Entrar com gov.br
+            </a>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
   </main>
 
   <footer class="">
-
   </footer>
 
   <script src="../code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="../maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-    <script>
-    $(document).ready(function() {
-      $('html, body').animate({
-        scrollTop: $(document).height()
-      }, 1000);
-    });
-  </script>
-
 </body>
 
-
-
-<!-- Mirrored from cnhliberada.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 26 Nov 2024 10:20:46 GMT -->
 </html>
